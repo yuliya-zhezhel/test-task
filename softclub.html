@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="table">
+        <h2>До начала осталось</h2>
+        <table cellpadding='0' cellspacing='0'>
+            <tr class="bg-grey">
+                <th class="border-left">270</th>
+                <th>03</th>
+                <th class="border-right">06</th>
+            </tr>
+            <tr class="time">
+                <td>Дни</td>
+                <td>Часы</td>
+                <td>Минуты</td>
+            </tr>
+
+        </table>
+
+
+
+    </section>
+    <div class="chat">
+        <div class="chat-items">
+            <div class="chat-item">
+                <div>Message 7</div>
+            </div>
+            <div class="chat-item">
+                <div>Message 6</div>
+            </div>
+            <div class="chat-item">
+                <div>Message 5</div>
+            </div>
+            <div class="chat-item">
+                <div>Message 4</div>
+            </div>
+            <div class="chat-item">
+                <div>Message 3</div>
+            </div>
+            <div class="chat-item">
+                <div>Message 2</div>
+            </div>
+            <div class="chat-item">
+                <div>Message 1</div>
+            </div>
+        </div>
+
+        <form action=""
+            onsubmit="document.querySelector('.chat-items').innerHTML=`<div class='chat-item mine'><div>${document.querySelector('#message').value}</div></div>`+document.querySelector('.chat-items').innerHTML;document.querySelector('#message').value = '';return false">
+            <textarea name="message" id="message" rows="4" style="width:100%"></textarea>
+            <input type="submit" value="Send" class="btn-send">
+        </form>
+    </div>
+</body>
+
+</html>

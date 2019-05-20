@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.table {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-collapse: collapse;
+    background: #e6e9f0;
+}
+.table h2{
+    color:#65768a;
+    margin-bottom:20px;
+}
+.time td {
+    text-align: center;
+    color: #656b79;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.bg-grey {
+    background: #b5bfc9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bg-grey td, .bg-grey th {
+    padding: 10px 71px;
+}
+
+.bg-grey th {
+    color: white;
+    font-size: 60px;
+}
+
+.border-left {
+    border: none;
+    border-radius: 50px 0 0 50px;
+}
+
+.border-right {
+    border-radius: 0 50px 50px 0;
+}
+
+.chat {
+    background: lightgray;
+    padding: 50px 0;
+}
+
+.chat-items {
+    font: 16px sans-serif;
+    display: flex;
+    height: 300px;
+    flex-direction: column-reverse;
+    overflow: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+}
+
+.chat-item {
+    margin: 5px 0;
+}
+
+.chat-item>div {
+    display: inline-block;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.chat-item.mine {
+    text-align: right;
+}
+
+.chat-item.mine>div {
+    background-color: #333;
+    color: #fff;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-send {
+    padding: 16px 50px;
+    background: #0499ca;
+    border: none;
+    border-radius: 47px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-send:focus {
+    outline: none;
+}
+
+.btn-send:hover {
+    background: lightcyan;
+    color: grey;
+}
