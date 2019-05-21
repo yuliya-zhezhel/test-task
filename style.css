@@ -114,6 +114,21 @@ form {
 }
 
 
+@media (max-width: 700px) { 
+    .bg-grey td, .bg-grey th {
+        padding: 10px 25px;
+    }
+    .bg-grey th {
+        font-size: 50px;
+    }
+}
 
 
-
+@media (max-width: 300px) { 
+    .bg-grey td, .bg-grey th {
+        padding: 10px 12px;
+    }
+    .bg-grey th {
+        font-size: 50px;
+    }
+}
